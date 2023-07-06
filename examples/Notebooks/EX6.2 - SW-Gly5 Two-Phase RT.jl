@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.9
+# v0.17.5
 
 using Markdown
 using InteractiveUtils
@@ -18,7 +18,7 @@ end
 # ╠═╡ show_logs = false
 begin
 	import Pkg
-	Pkg.activate("/home/rick/.julia/dev/AnalyticalEOR/Project.toml")
+	Pkg.activate("/Users/oluwafemioyenowo/Desktop/AnalyticalEOR.jl/Project.toml")
 	using Revise, AnalyticalEOR, PlutoUI, Plots, Roots, LaTeXStrings
 end
 
@@ -65,7 +65,7 @@ begin
     K₃₁ = 10^1.78
     K₂₃ = K₂₁ / K₃₁
 
-	ec = ExchangeConstants(K₂₁, K₃₁, K₂₃, Z, ν)
+	ec = IonExchangeProblem(K₂₁, K₃₁, K₂₃, Z, ν)
 
 end
 
@@ -249,7 +249,7 @@ md"""t = $t2"""
     plot_sat_profile(sol, t2)
 
 # ╔═╡ Cell order:
-# ╟─d8d0af8e-0c5e-11ed-1370-cb8d2ab22ce7
+# ╠═d8d0af8e-0c5e-11ed-1370-cb8d2ab22ce7
 # ╟─79399bed-95e7-43ea-bef4-dd56a3364e0c
 # ╟─a06e0ff4-9540-4985-8a24-0d2f20b5d3ef
 # ╠═febdeadf-fff3-4b3d-ad18-4be6658d62b7

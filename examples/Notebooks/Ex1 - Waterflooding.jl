@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.9
+# v0.17.3
 
 using Markdown
 using InteractiveUtils
@@ -17,7 +17,7 @@ end
 # ╔═╡ 2858e2e6-07dd-11ed-1828-1d526ab9abb9
 begin
 	import Pkg
-	Pkg.activate("/home/rick/.julia/dev/AnalyticalEOR/Project.toml")
+	Pkg.activate("/Users/oluwafemioyenowo/Desktop/AnalyticalEOR.jl")
 	using AnalyticalEOR, PlutoUI, Plots
 end
 

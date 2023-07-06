@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.9
+# v0.17.5
 
 using Markdown
 using InteractiveUtils
@@ -18,7 +18,7 @@ end
 # ╠═╡ show_logs = false
 begin
 	import Pkg
-	Pkg.activate("/home/rick/.julia/dev/AnalyticalEOR/Project.toml")
+	Pkg.activate("/Users/oluwafemioyenowo/Desktop/AnalyticalEOR.jl/Project.toml")
 	using Revise, AnalyticalEOR, PlutoUI, Plots, Roots
 end
 
@@ -109,7 +109,7 @@ begin
 end
 
 # ╔═╡ Cell order:
-# ╟─ce2623b0-0bba-11ed-0bb4-37c4e85dc528
+# ╠═ce2623b0-0bba-11ed-0bb4-37c4e85dc528
 # ╟─f48e4e8f-3b3c-402d-ad54-084f1d61010c
 # ╠═6dd2d969-64c4-4ba7-a90f-a4e7e0a17bae
 # ╠═7d515eed-e29c-4df6-a329-066b4315e19c

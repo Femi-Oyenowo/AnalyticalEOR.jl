@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.9
+# v0.17.3
 
 using Markdown
 using InteractiveUtils
@@ -14,12 +14,8 @@ macro bind(def, element)
     end
 end
 
-# ╔═╡ 35ac77e6-0ba7-11ed-1ad8-d9356b568460
-begin
-	import Pkg
-	Pkg.activate("/home/rick/.julia/dev/AnalyticalEOR/Project.toml")
-	using Revise, AnalyticalEOR, PlutoUI, Plots, Roots
-end
+# ╔═╡ 5390191d-1ca0-4943-9890-465afb7dd35d
+Pkg.add("Revise")
 
 # ╔═╡ db885e1c-569c-451a-a32b-21f50df62ca9
 @bind si Slider(0.2:0.01:0.8, default=0.2)
@@ -87,7 +83,19 @@ begin
     plot_sat_profile(sol, t)
 end
 
+# ╔═╡ 35ac77e6-0ba7-11ed-1ad8-d9356b568460
+begin
+	import Pkg
+	Pkg.activate("/Users/oluwafemioyenowo/Desktop/AnalyticalEOR.jl/Project.toml")
+	using Revise, AnalyticalEOR, PlutoUI, Plots, Roots
+end
+
+# ╔═╡ 58334ba4-6214-4d64-9d0e-e8618675473c
+import Pkg
+
 # ╔═╡ Cell order:
+# ╠═58334ba4-6214-4d64-9d0e-e8618675473c
+# ╠═5390191d-1ca0-4943-9890-465afb7dd35d
 # ╠═35ac77e6-0ba7-11ed-1ad8-d9356b568460
 # ╠═0a6e7335-1a57-4ae2-bbde-2c9de30c3f6e
 # ╟─54cfd1de-b5cd-455c-9228-cd3e8ee26858
